@@ -1,61 +1,104 @@
-### 基于Spring-boot 和 elfinder 的在线文件管理系统
 
-#### 效果图
-https://www.jianshu.com/p/67a1e7725dae
+Version 3 
+user controller validation is activated!
+login with gmail smtp has been fixed
+some UI changes has been applied
 
-#### 功能
-- 支持在线文件下载
-- 支持目录上传
-- 支持zip tar Gzip 的在线解压和压缩文件夹
-- 支持多种文本格式的高亮显示和在线编辑
-- 支持在线文件预览
-- 支持文件夹权限设置
-- 支持国际化
+version 3.5
+multiple login has been fixed
+searchable tables has been added
+Appname in New Job page has been shown
+new job front-end validation has been applied
 
-#### 配置 application.yml
-```
-file-manager:
-     thumbnail:
-        width: 80 # 缩略图宽
-     volumes:
-        - Node: # 可配置多个节点
-          source: fileSystem # 暂时只支持本地文件系统
-          alias: Tomcat目录 # 目录别名
-          path: /D:/Java # 映射目录
-          _default: true # 是否默认打开
-          locale:
-          constraint:
-            locked: false # 文件夹是否锁定
-            readable: true # 是否可读
-            writable: true # 是否可写
-```
+version 3.5.2
+post method for registration
+complete registration form
 
-#### 运行
-```
-    git clone https://github.com/konglinghai123/spring-elfinder.git
-    mvn install
-    cd spring-web
-    mvn spring-boot:run
-```
-#### war包运行（放在tomcat ROOT 目录运行即可）
-```
-      <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+version 3.5.6
+password all chars fixed ($ problem!)
 
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+version 3.9
+FQstatAll has been added
+FQstatUser has been added
+Admin Dashboard has been activated
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
-```
-#### 访问
-http://127.0.0.1:8080
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+BAB_HPC_Portal version 0.9
+HPC portal V3.9 and Filemanager are in one project
+
+BAB_HPC_Portal version 0.9.6
+back link in each page has been added
+null picture has been added
+edit profile with no picture has been applied
+
+BAB_HPC_Portal version 0.9.8
+forgot password has been fixed
+side bar menu icon hover has been added
+application has been tested successfuly
+
+BAB_HPC_Portal version 0.9.9
+some bugs has been fixed (password,newjob browser refresh button, ...)
+
+BAB_HPC_Portal version 1.0
+delete button in news
+Help
+permisions has been added
+tariff and group redirect checked
+
+BAB_HPC_Portal version 1.1
+image labels in user edit has been fixed
+tariff eddit and new tariff node number has been fixed
+mail forward has been done
+contact us page has been added
+
+BAB_HPC_Portal version 1.5
+storage now is editable
+advanced mode for new job has been added
+
+BAB_HPC_Portal version 1.6
+alerts have been added
+
+BAB_HPC_Portal version 1.7*
+profile and uimessages errors has been fixed
+
+BAB_HPC_Portal version 1.8*
+Some bugs has been fixed
+search fileds has been deleted
+
+BAB_HPC_Portal version 2.0
+color hints has been added
+reports has been added
+
+BAB_HPC_Portal version 2.5
+Some Bugs has been fixed
+Administration panel has been Enabled
+Application panel has been added
+
+BAB_HPC_Portal version 2.6
+Some Bugs has been Fixed
+
+BAB_HPC_Portal version 2.7
+Email Sender has been fixed for Outlook 
+
+BAB_HPC_Portal version 2.8
+User delete Home
+job make dir
+double format
+20 points of Rashid fixed
+
+BAB_HPC_Portal version 2.9
+active/inactive a group
+negetive charges are shown
+
+BAB_HPC_Portal version 3.0
+Bugs are fixed
+reports are more accesible
+applications can be activated or deactivated
+
+BAB_HPC_Portal version 3.1
+print
+bugs fixed
+
+BAB_HPC_Portal version 3.2
+Groups are aplied in tariff 
+bugs fixed
