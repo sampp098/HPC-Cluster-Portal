@@ -1,0 +1,55 @@
+security:
+  require-ssl: true
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8080
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: classpath:keystore2.p12
+    key-store-password: sam52242
+    key-alias: tomcat
+
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  resources:
+    static-locations: classpath:static/
+  http:
+    encoding:
+      charset: utf-8
+#      force: true
+#      enabled: true
+    multipart:
+      enabled: true
+      max-file-size: -1
+
+file-manager:
+     thumbnail:
+        width: 80
+     volumes:
+        - Node:
+          source: filesystem
+          alias: HOME
+          path: /M:/sajjad
+          _default: true
+          locale:
+          constraint:
+            locked: false
+            readable: true
+            writable: true
+
+
+
+
+
+
+
+
+
+
